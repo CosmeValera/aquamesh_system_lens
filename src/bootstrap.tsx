@@ -13,13 +13,11 @@ const mount = (el: HTMLElement) => {
   };
 };
 
-// If we are in development and running in isolation
-if (process.env.NODE_ENV === 'development') {
-  const devRoot = document.getElementById('app');
-  
-  if (devRoot) {
-    mount(devRoot);
-  }
+// If we are in development and running in isolation,
+// or if we are in production and running standalone
+const devRoot = document.getElementById('app');
+if (devRoot) {
+  mount(devRoot);
 }
 
 export { mount }; 
