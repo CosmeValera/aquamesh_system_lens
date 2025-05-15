@@ -9,6 +9,7 @@ const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   cache: false,
   devtool: false,
+  entry: './src/index.js',
   optimization: {
     minimize: true,
   },
