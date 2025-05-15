@@ -2,7 +2,7 @@ import React from 'react';
 import { PrimeReactProvider } from 'primereact/api';
 
 // Import styles
-import '../../../style/themes/aquamesh-theme/theme.scss';
+import '../style/themes/aquamesh-theme/theme.scss';
 import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
